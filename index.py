@@ -16,17 +16,21 @@ elif operation== "/":
     print(first_number/secound_number) 
 else: 
     print("the operation is not valid")
+ bus_capacity = int(input("what is the bus capacity?"))
+  inbus = int(input("how many people are in the bus? "))
+outbus = int(input("how many people are out of the bus?"))  
 
 
-    bus_capacity = 30
-    inbus = int(input("how many people are in the bus? "))
-    outbus = int(input("how many people are out of the bus?"))
-    empty_seats = bus_capacity - inbus
-    print(empty_seats)
-    if empty_seats>outbus:
+   
+print("empty_seats")
+empty_seats = bus_capacity - inbus
+    
+if empty_seats>outbus:
         print("you can get in")
-    elif empty_seats<=outbus:
+elif empty_seats<=outbus:
         print("the bus is full")
+else : 
+        print("you can not enter the bus")
  
 
 
